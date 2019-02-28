@@ -7,20 +7,27 @@
 //
 
 import UIKit
+import PKHUD
 
 class ListTableViewController: UITableViewController, PostCollectionDelegate {
     
     let postCollection = PostCollection.shared
-    let user = User.shared
+//    let user = User.shared
     
     func saved() {
         self.tableView.reloadData()
+    }
+    
+    func loaded() {
+        self.tableView.reloadData()
+//        HUD.hide()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         postCollection.delegate = self
+//        HUD.show(.progress)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -49,7 +49,6 @@ UIImagePickerControllerDelegate, FBSDKLoginButtonDelegate {
         picker.delegate = self
         self.present(picker, animated: true, completion: nil)
         
-        
     }
     
     //撮影終了後

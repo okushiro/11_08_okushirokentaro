@@ -25,6 +25,8 @@
 		D449517E2222D9A100CFEDCC /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D449517D2222D9A100CFEDCC /* MobileNet.mlmodel */; };
 		D44951822222DAB600CFEDCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D44951812222DAB600CFEDCC /* GoogleService-Info.plist */; };
 		D44951842222DC1B00CFEDCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44951832222DC1A00CFEDCC /* AppDelegate.swift */; };
+		D4495190222408E200CFEDCC /* PostRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449518F222408E200CFEDCC /* PostRepositoryProtocol.swift */; };
+		D44951922224090D00CFEDCC /* FirestorePostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44951912224090D00CFEDCC /* FirestorePostRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		D449517D2222D9A100CFEDCC /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		D44951812222DAB600CFEDCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D44951832222DC1A00CFEDCC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D449518F222408E200CFEDCC /* PostRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryProtocol.swift; sourceTree = "<group>"; };
+		D44951912224090D00CFEDCC /* FirestorePostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePostRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 		D449514D2222D6DB00CFEDCC /* MyLunch2 */ = {
 			isa = PBXGroup;
 			children = (
+				D4495186222406F900CFEDCC /* Repositories */,
+				D4495185222406D400CFEDCC /* Services */,
 				D44951602222D82900CFEDCC /* Models */,
 				D44951672222D82F00CFEDCC /* Extensions */,
 				D449516A2222D83F00CFEDCC /* Storyboards */,
@@ -120,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				D44951612222D82900CFEDCC /* User.swift */,
-				D44951622222D82900CFEDCC /* PostCollection.swift */,
 				D44951632222D82900CFEDCC /* Post.swift */,
 			);
 			path = Models;
@@ -154,6 +159,23 @@
 				D44951772222D84400CFEDCC /* ListTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4495185222406D400CFEDCC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D44951622222D82900CFEDCC /* PostCollection.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4495186222406F900CFEDCC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D449518F222408E200CFEDCC /* PostRepositoryProtocol.swift */,
+				D44951912224090D00CFEDCC /* FirestorePostRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +328,10 @@
 				D449517A2222D84400CFEDCC /* LoginViewController.swift in Sources */,
 				D44951792222D84400CFEDCC /* PostViewController.swift in Sources */,
 				D44951652222D82900CFEDCC /* PostCollection.swift in Sources */,
+				D44951922224090D00CFEDCC /* FirestorePostRepository.swift in Sources */,
 				D44951692222D82F00CFEDCC /* UIViewController.swift in Sources */,
 				D44951782222D84400CFEDCC /* ViewController.swift in Sources */,
+				D4495190222408E200CFEDCC /* PostRepositoryProtocol.swift in Sources */,
 				D449517C2222D84400CFEDCC /* ListTableViewController.swift in Sources */,
 				D449517E2222D9A100CFEDCC /* MobileNet.mlmodel in Sources */,
 				D44951642222D82900CFEDCC /* User.swift in Sources */,
